@@ -1,0 +1,25 @@
+package patch
+
+import (
+	"fmt"
+	"net/http"
+	"reflect"
+
+	"github.com/xmapst/logx"
+
+	"github.com/xmapst/go-hotfix"
+	"github.com/xmapst/go-hotfix/example/handler"
+)
+
+func PatchTest() *hotfix.FuncPatch {
+	logx.Infoln("[Patch] invoke PatchTest()")
+	fn := func(h *handler.HttpSvc, w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "hello world")
+	}
+	logx.Infoln("[Patch] invoke PatchTest() end")
+	return &hotfix.FuncPatch{
+		FuncName:   "Index",
+		FuncValue:  reflect.ValueOf(fn),
+		StructType: reflect.TypeOf(&handler.HttpSvc{}),
+	}
+}
