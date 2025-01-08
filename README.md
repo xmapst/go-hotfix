@@ -12,5 +12,7 @@ go:generate yaegi extract xxx路径 包名（包名跟路径一样可以省去�
 
 4,脚本[test_go.patch](example%2Fpatch%2Ftest_go.patch) 文件任何位置下
 
++ 注意: 为了确保函数都能被修补，需要关闭函数内联，会因此损失一些性能
+
 ## 示例
 [example](example)
