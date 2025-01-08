@@ -1,0 +1,13 @@
+# github.com/agiledragon/gomonkey/v2 v2.12.0
+## explicit; go 1.14
+github.com/agiledragon/gomonkey/v2
+github.com/agiledragon/gomonkey/v2/creflect
+# github.com/traefik/yaegi v0.16.1
+## explicit; go 1.21
+github.com/traefik/yaegi/internal/unsafe2
+github.com/traefik/yaegi/interp
+github.com/traefik/yaegi/stdlib
+github.com/traefik/yaegi/stdlib/generic
+github.com/traefik/yaegi/stdlib/syscall
+github.com/traefik/yaegi/stdlib/unrestricted
+github.com/traefik/yaegi/stdlib/unsafe
